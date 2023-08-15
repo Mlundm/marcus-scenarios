@@ -1,0 +1,23 @@
+{
+  "title": "HNC Namespace",
+  "description": "Try out HNC namespaces",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "01-install_hnc.sh",
+      "foreground": "02-wait_for_pods.sh"
+    },
+    "steps": [
+      {
+        "title": "Create a sub-namespace",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

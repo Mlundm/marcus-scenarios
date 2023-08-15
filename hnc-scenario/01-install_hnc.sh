@@ -1,5 +1,10 @@
 #!/bin/bash
 
+### Create user namespace
+
+kubectl create ns company
+
+
 # https://github.com/kubernetes-sigs/hierarchical-namespaces/releases/
 
 ### Apply HNC Controller

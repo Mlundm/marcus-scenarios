@@ -1,6 +1,6 @@
 
 <br>
 
-### WELL DONE !
+### Challenge Complete!
 
 You solved this challenge!
