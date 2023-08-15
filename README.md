@@ -6,6 +6,5 @@ Trying out creating Killercoda scenarios
 
 ## HNC Scenario
 
-Uses node image "kubernetes-k3s-1node". 
+Note: Cannot use HNC 1.1.0 due to libc6 version being 2.31.
 
-Could not use "kubernetes-kubeadm-1node" due to libc6 version not being higher than 2.31 which prevented the installation of HNC kubectl plugin.
