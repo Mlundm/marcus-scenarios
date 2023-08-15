@@ -12,6 +12,11 @@
         "title": "Create a sub-namespace",
         "text": "step1/step1.md",
         "verify": "step1/verify.sh"
+      }, 
+      {
+        "title": "Object propagation",
+        "text": "step2/step2.md",
+        "verify": "step2/verify.sh"
       }
     ],
     "finish": {
