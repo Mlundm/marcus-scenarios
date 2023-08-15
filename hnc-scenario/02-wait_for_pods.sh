@@ -7,9 +7,7 @@ do
     kubectl rollout status deployment -n hnc-system hnc-controller-manager --timeout=10s > /dev/null 2>&1
     status=$?
     counter=$((counter+1))
+    sleep 3
     clear
     echo "Waiting for HNC to be running..."
-    sleep 3
 done
-
-echo "HNC is running!"
