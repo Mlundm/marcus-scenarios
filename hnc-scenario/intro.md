@@ -5,7 +5,7 @@
 
 In this scenario we will learn to work with HNC namespaces.
 
-TODO Insert intro about HNC namespaces..
+Hierarchical Namespaces allows the user to create namespaces in restricted environments where you lack full access to the cluster.
 
 Topics
 

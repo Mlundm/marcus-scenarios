@@ -3,4 +3,21 @@ Create a subnamespace named `team-abc`{{copy}} with the existing namespace `comp
 
 Tip: Check the `kubectl hns create`{{copy}} command
 
-After creating the subnamespace, verify with `kubectl hns describe <namespace>`{{copy}} and/or `kubectl hns tree <parent-namespace>`{{copy}}.
+<details>
+  <summary>Alternative to using `hns` command</summary>
+
+```
+kubectl apply -f - <<EOF
+apiVersion: hnc.x-k8s.io/v1alpha2
+kind: SubnamespaceAnchor
+metadata:
+  name: <descendant-namespace>
+  namespace: <parent-namespace>
+EOF
+```
+</details>
+
+After creating the subnamespace, verify with:
+* `kubectl get ns <namespace>`{{copy}}
+* `kubectl hns describe <namespace>`{{copy}}
+* `kubectl hns tree <parent-namespace>`{{copy}}
