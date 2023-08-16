@@ -5,7 +5,7 @@ Roles and rolebindings are by default propagated from the parent to the subnames
 Create a role named `admin`{{copy}} in the `company`{{copy}} namespace.
 
 <details>
-  <summary>Command</summary>
+  <summary>Solution</summary>
 
   `kubectl -n company create role admin --verb=get --resource=pods`{{copy}}
 

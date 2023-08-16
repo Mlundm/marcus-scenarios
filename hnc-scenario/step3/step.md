@@ -7,7 +7,7 @@ This is done by annotating the object with `propagate.hnc.x-k8s.io/none: "true"`
 Now prevent the `admin`{{copy}} role from getting propagated to `team-abc`{{copy}}
 
 <details>
-  <summary>Command</summary>
+  <summary>Solution</summary>
 
   `kubectl annotate role -n company admin propagate.hnc.x-k8s.io/none="true"`{{copy}}
 
