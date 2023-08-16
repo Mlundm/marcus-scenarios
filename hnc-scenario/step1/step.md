@@ -4,15 +4,21 @@ Create a subnamespace named `team-abc`{{copy}} with the existing namespace `comp
 Tip: Check the `kubectl hns create`{{copy}} command
 
 <details>
-  <summary>Alternative to using `hns` command</summary>
+  <summary>Solution</summary>
+
+`kubectl hns create -n company team-abc`{{copy}}
+</details>
+
+<details>
+  <summary>Alternative solution</summary>
 
 ```
 kubectl apply -f - <<EOF
 apiVersion: hnc.x-k8s.io/v1alpha2
 kind: SubnamespaceAnchor
 metadata:
-  name: <descendant-namespace>
-  namespace: <parent-namespace>
+  name: team-abc
+  namespace: company
 EOF
 ```
 </details>
