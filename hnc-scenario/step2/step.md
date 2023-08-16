@@ -7,7 +7,7 @@ Create a role named `admin`{{copy}} in the `company`{{copy}} namespace.
 <details>
   <summary>Command</summary>
 
-  `kubectl -n company create role admin --verb=get --resource=pods`
+  `kubectl -n company create role admin --verb=get --resource=pods`{{copy}}
 
 </details>
 
