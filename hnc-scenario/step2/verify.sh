@@ -1,8 +1,4 @@
 #!/bin/bash
 
-#Check if admin role does not exist in team-abc namespace
-output=$(kubectl get role -n team-abc)
-role="admin"
-if [[ "$output" != *"$role"* ]]; then 
-    exit 1
-fi
+#Check if admin role exist in team-abc namespace
+kubectl get role -n team-abc admin
