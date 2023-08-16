@@ -9,6 +9,6 @@ TODO Insert intro about HNC namespaces..
 
 Topics
 
-* Create a subnamespace.
-* Object propagation - Defaults
-* Object propagation - Custom
+1. Create a subnamespace.
+2. Object propagation - Defaults.
+3. Preventing propagation.
