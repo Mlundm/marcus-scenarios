@@ -11,3 +11,6 @@ do
     clear
     echo "Waiting for HNC to be running..."
 done
+
+#Fix for kubectl hns plugin not being found sometimes.
+exec $SHELL
